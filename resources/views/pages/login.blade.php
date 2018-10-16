@@ -6,6 +6,7 @@
   
   
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+  
       <link href="{{asset('css/style.css')}}" rel="stylesheet"/>
 
       <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -56,11 +57,6 @@
         </div>
 
 
-
-
-
-
-
         <html>
           <head>
             <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
@@ -90,31 +86,6 @@
             <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
           </body>
           </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <div class="hr"></div>
         <div class="foot-lnk">

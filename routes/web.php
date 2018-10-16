@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'pagesController@login');
+
+Route::get('/profile', 'pagesController@dashboard');
