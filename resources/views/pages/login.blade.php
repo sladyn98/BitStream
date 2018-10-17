@@ -6,8 +6,8 @@
   
   
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
-  
-      <link href="{{asset('css/style.css')}}" rel="stylesheet"/>
+
+      <link href="{{asset('css/login_style.css')}}" rel="stylesheet"/>
 
       <script src="https://apis.google.com/js/platform.js" async defer></script>
   
