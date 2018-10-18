@@ -12,9 +12,8 @@
 */
 
 /* Route::get('/', 'pagesController@login');*/
-
+Route::get('/', 'pagesController@register');
 Route::get('/profile', 'pagesController@dashboard');
+Auth::routes();
 
-
-Route::get('/register','RegistrationController@Create');
-Route::post('register','RegistrationController@Store');
+Route::get('/dashboard', 'pagesController@dashboard');

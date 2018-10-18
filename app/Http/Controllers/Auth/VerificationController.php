@@ -1,11 +1,8 @@
 <?php
-
 namespace App\Http\Controllers\Auth;
-
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Foundation\Auth\VerifiesEmails;
-
 class VerificationController extends Controller
 {
     /*
@@ -18,16 +15,13 @@ class VerificationController extends Controller
     | be resent if the user did not receive the original email message.
     |
     */
-
     use VerifiesEmails;
-
     /**
      * Where to redirect users after verification.
      *
      * @var string
      */
-    protected $redirectTo = '/home';
-
+    protected $redirectTo = '/dashboard';
     /**
      * Create a new controller instance.
      *

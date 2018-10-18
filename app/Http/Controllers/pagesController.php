@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class pagesController extends Controller
 {
     
-    public function login(){
-        return view('pages/login');
+    public function register(){
+        return view('layouts/app');
     }
 
     public function dashboard(){
-        return view('pages/dashboard');
+        return view('dashboard');
     }
 }
