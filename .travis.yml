@@ -12,7 +12,6 @@ before_install:
  - sudo apt-get update
               
 install: 
- - php vendor/vendors.php
  - composer install
  - export PATH="$HOME/.composer/vendor/bin:$PATH"
  - vendor/bin/phpunit
