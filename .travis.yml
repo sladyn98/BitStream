@@ -1,15 +1,24 @@
 language: php
 
 php:
-  - 5.7
+  - '5.4'
+  - '5.6'
+  - '7.0'
+  - hhvm # on Trusty only
+  - nightly
 
-before_install:
-  - if [[ ${TRAVIS_PHP_VERSION:0:3} == "5.6" ]]; then composer require --dev --no-update phpunit/phpunit 5.7.5; fi
 
-before_script:
-  - mysql -e 'create database homestead_test;'
-  - composer self-update
-  - composer install --no-interaction
 
-script:
-- vendor/bin/phpunit
+before_install: - sudo apt-get update
+                
+
+
+install: - php vendor/vendors.php
+         - composer install
+         - export PATH="$HOME/.composer/vendor/bin:$PATH"
+         - vendor/bin/phpunit
+
+after_install:
+                - composer self-update
+                - composer install --no-interaction --dev
+                - php artisan migrate
