@@ -18,13 +18,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/register_style.css') }}" rel="stylesheet">
 </head>
 
 
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
+            <div class="container" id="cont">
                 <a class="navbar-brand" href="{{ url('/') }}">
                 BitStream
                 </a>
