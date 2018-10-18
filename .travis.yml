@@ -8,17 +8,19 @@ php:
   - nightly
 
 
+before_install:
+ - sudo apt-get update
+              
+install: 
+ - php vendor/vendors.php
+ - composer install
+ - export PATH="$HOME/.composer/vendor/bin:$PATH"
+ - vendor/bin/phpunit
 
-before_install: - sudo apt-get update
-                
-
-
-install: - php vendor/vendors.php
-         - composer install
-         - export PATH="$HOME/.composer/vendor/bin:$PATH"
-         - vendor/bin/phpunit
+script:
+  - phpunit
 
 after_install:
-                - composer self-update
-                - composer install --no-interaction --dev
-                - php artisan migrate
+ - composer self-update
+ - composer install --no-interaction --dev
+ - php artisan migrate
