@@ -26,11 +26,17 @@
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav mr-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="font-family:ABeeZee, sans-serif;color:#f9efc1;">Practice</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#f9efc1;font-family:ABeeZee, sans-serif;">Compete</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"></a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                        </li>
-                    </ul><span class="navbar-text actions"> </span></div>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#f9efc1;font-family:ABeeZee, sans-serif;">Compete</a></li> 
+                    </ul>
+
+                    <ul  class="nav navbar-nav navbar-right">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#" style="color:#f9efc1;font-family:ABeeZee, sans-serif;">Username</a></li>
+                    </ul>
+                    
+                    
+                    
+                    
+                    <span class="navbar-text actions"> </span></div>
     </div>
     </nav>
     </div>

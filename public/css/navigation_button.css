@@ -108,3 +108,7 @@
   background:#66d7d7;
 }
 
+.navbar-nav > ul.navbar-right {
+  float: right !important;
+}
+

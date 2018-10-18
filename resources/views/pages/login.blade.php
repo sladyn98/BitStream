@@ -39,10 +39,10 @@
           <a href="#forgot">Forgot Password?</a>
         </div>
       </form>
-      <form class="sign-up-htm" action="/profile" method="POST">
+      <form class="sign-up-htm" action="/register" method="POST">
         <div class="group">
-          <label for="user" class="label">Username</label>
-          <input id="username" name="username" type="text" class="input">
+          <label for="user" class="label">Name</label>
+          <input id="name" name="name" type="text" class="input">
         </div>
         <div class="group">
           <label for="pass" class="label">Password</label>
