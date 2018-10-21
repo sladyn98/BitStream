@@ -38,7 +38,6 @@
 
   
 </head>
-
 <body>
     <div>
         <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:rgb(17,1,1);">
