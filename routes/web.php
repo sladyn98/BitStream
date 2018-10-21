@@ -12,8 +12,47 @@
 */
 
 /* Route::get('/', 'pagesController@login');*/
-Route::get('/', 'pagesController@register');
+Route::get('/', 'pagesController@home');
 Route::get('/profile', 'pagesController@dashboard');
+Route::get('/code','pagesController@code_editor');
+Route::get('/output', array('as' => 'output', function()
+{
+    return view('output');
+}));
+
+
+
+
+
+
+
 Auth::routes();
 
-Route::get('/dashboard', 'pagesController@dashboard');
+Route::get('/dashboard', array('as' => 'dashboard', function()
+{
+    return view('dashboard');
+}));
+
+
+
+Route::get('/javasection', array('as' => 'javasection', function()
+{
+    return view('javasection');
+}));
+
+/*Route::get('/compiler',function() {
+    return view('compile_source');
+});
+*/
+
+// Route::get('/javasection',function(){
+
+//      return view('javasection');
+//  });
+
+
+Route::get('/compiler', 'compileSourceController@check');
+
+Route::get('/runner','compileSourceController@code');
+
+Route::get('/wrong','pagesController@wrong_answer');

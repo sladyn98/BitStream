@@ -100,7 +100,9 @@
         <div class="col-sm-6 col-md-5 col-lg-4 item">
             <div class="box"><img />
                 <h3 class="name">Java</h3>
-                <p class="description"><br />Java is a general-purpose computer-programming language that is concurrent &amp; object-oriented, and specifically designed to have as few implementation dependencies as possible.<br /><br /></p><button class="btn btn-primary" type="button">Practice</button></div>
+                <p class="description"><br />Java is a general-purpose computer-programming language that is concurrent &amp; object-oriented, and specifically designed to have as few implementation dependencies as possible.<br /><br /></p>
+                <a href="{{ route('javasection') }}" id = "wrong" class="btn orange"> Return Home </a>
+            </div>
         </div>
         <div class="col-sm-6 col-md-5 col-lg-4 item">
             <div class="box"><img />
