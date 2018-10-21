@@ -40,6 +40,18 @@ Route::get('/javasection', array('as' => 'javasection', function()
     return view('javasection');
 }));
 
+
+
+Route::get('/cplussection', array('as' => 'cplussection', function()
+{
+    return view('cplussection');
+}));
+
+Route::get('/pythonsection', array('as' => 'pythonsection', function()
+{
+    return view('pythonsection');
+}));
+
 /*Route::get('/compiler',function() {
     return view('compile_source');
 });
