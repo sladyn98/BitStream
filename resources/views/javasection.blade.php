@@ -12,6 +12,39 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aubrey">
+
+
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 <body style="background-color:rgb(5,32,45);">
@@ -74,11 +107,13 @@
     </div>
     <div></div>
     <div class="jumbotron" style="margin:0px;padding:0px;background-color:rgba(21,86,150,0.46);">
-        <h2 style="color:#f9efc1;row justify-content-center features">Welcome to Java!<button class="btn btn-primary d-flex " type="button" style="margin:0px 1050px;background-color:#e28c05;color:#f9efc1;">Solve</button></h2>
+        <h2 style="color:#f9efc1;row justify-content-center features">Welcome to Java!
+        <a  href="{{route('javaq')}}" class="btn btn-primary d-flex " type="button" style="margin:0px 1050px;width:70px;background-color:#e28c05;color:#f9efc1;">Solve</a></h2>
         <p style="font-size:20px;color:#f9efc1;">Very easy</p>
     </div>
     <div class="jumbotron" style="margin:0px;padding:0px;background-color:rgba(21,86,150,0.46);">
-        <h2 style="color:#f9efc1;">Print it reverse!<button class="btn btn-primary d-flex" type="button" style="margin:0px 1050px;background-color:#e28c05;color:#f9efc1;">Solve</button></h2>
+        <h2 style="color:#f9efc1;">Print it reverse!
+        <a href="{{route('javaq2')}}" class="btn btn-primary d-flex" type="button" style="margin:0px 1050px;width:70px;background-color:#e28c05;color:#f9efc1;">Solve</a></h2>
         <p style="font-size:20px;color:#f9efc1;">Easy</p>
     </div>
     <div class="jumbotron" style="margin:0px;padding:0px;background-color:rgba(21,86,150,0.46);">

@@ -41,6 +41,17 @@ Route::get('/javasection', array('as' => 'javasection', function()
 }));
 
 
+Route::get('/javaq', array('as' => 'javaq', function()
+{
+    return view('javaq');
+}));
+
+
+Route::get('/javaq2', array('as' => 'javaq2', function()
+{
+    return view('javaq2');
+}));
+
 
 Route::get('/cplussection', array('as' => 'cplussection', function()
 {
