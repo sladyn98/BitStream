@@ -41,9 +41,9 @@
       </head>
 
 <body style="text-align:center">
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color:rgb(5,32,45)";>
         <div class="container" id="cont">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a style="color:#f9efc1" class="navbar-brand" href="{{ url('/') }}">
             BitStream
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -61,16 +61,16 @@
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a style="color:#f9efc1" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         <li class="nav-item">
                             @if (Route::has('register'))
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a style="color:#f9efc1" class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             @endif
                         </li>
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a style="color:#f9efc1" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
@@ -114,7 +114,7 @@
                 <div class="col-sm-6 col-md-5 col-lg-4 item">
                     <div class="box" style="background-color:rgba(170,170,170,0.15);color:#c5eae7;">
                         <h3 class="name" style="color:#c5eae7;">Python</h3>
-                        <p class="description" style="color:#c5eae7;"><strong>Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace</p>
+                        <p class="description" style="color:#c5eae7;">Python is an interpreted high-level programming language for general-purpose programming. Python has a design philosophy that emphasizes code readability, notably using significant whitespace</p>
                         <a href="{{ route('pythonsection') }}"
                             class="btn btn-primary" type="button" style="background-color:#f96302;margin:5px;">Practice</a>
                     </div>
@@ -123,16 +123,12 @@
         </div>
     </div>
     <div class="footer-basic" style="background-color:rgb(5,32,45);">
-        <footer>
+        <footer style="color:rgb(5,32,45)">
             <div class="social" style="color:#f9ddd6;"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline"
                 style="color:#f9efc1;">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
+                <li class="list-inline-item"><a href="#">About Us</a></li>
+                <li class="list-inline-item"><a href="#">Terms and Policies</a></li>
             <p class="copyright" style="color:#f9efc1;">Bitstream© 2018</p>
         </footer>
     </div>

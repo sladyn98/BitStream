@@ -22,10 +22,10 @@
 </head>
 
 
-<body>
-    <div id="app">
+<body >
+    <div id="app" style="color:rgb(5, 32, 45)">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container" id="cont">
+            <div class="container" style="color:rgb(5, 32, 45)" id="cont">
                 <a class="navbar-brand" href="{{ url('/') }}">
                 BitStream
                 </a>

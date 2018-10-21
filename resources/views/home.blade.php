@@ -44,7 +44,7 @@
    
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel"  style="background-color:rgb(5,32,45);">
         <div class="container" id="cont">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a style="color:#f9efc1" class="navbar-brand" href="{{ url('/') }}">
             BitStream
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -62,16 +62,16 @@
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a style="color:#f9efc1" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         <li class="nav-item">
                             @if (Route::has('register'))
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <a style="color:#f9efc1" class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             @endif
                         </li>
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a style="color:#f9efc1" id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
@@ -93,10 +93,10 @@
         </div>
     </nav>
 
-    <h1 style="color:#108c76;font-size:90px;margin:180px 420px; text-align:center">Bitstream</h1>
+    <h1 style="color:#f9efc1;font-size:90px;margin:180px 420px; text-align:center">Bitstream</h1>
 
 
-    
+
     <div class="footer-basic" style="background-color:rgb(5,32,45);">
         <footer>
             <ul class="list-inline" style="color:#f9efc1; text-align:center">

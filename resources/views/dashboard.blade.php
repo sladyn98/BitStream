@@ -40,7 +40,7 @@
 </head>
 <body style="background-color: rgb(5, 32, 45)">
     <div>
-        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" >
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="color:rgb(5,32,45">
             <div class="container"><a class="navbar-brand" href="#" style="color:#108c76;font-family:'Alfa Slab One', cursive;">BitStream</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">

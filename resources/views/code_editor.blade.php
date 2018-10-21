@@ -72,7 +72,7 @@
 
     <body>
         <div>
-            <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:rgb(17,1,1);">
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:rgb(5,32,45);">
                 <div class="container"><a class="navbar-brand" href="#" style="color:#108c76;font-family:'Alfa Slab One', cursive;">BitStream</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div
                         class="collapse navbar-collapse" id="navcol-1">
@@ -117,11 +117,6 @@
         </div>
         </nav>
     </div>
-
-
-
-
-
 
 
 
@@ -261,14 +256,13 @@
     });
     
 </script>
-
-  
 </body>
 
 
-      <div class="footer">
+      <div class="footer" style="text-align:center">
        <!-- <a   type="button" class="btn btn-default">Run</a>-->
-       <button id = "compile">Compile and Run</button>
+        <button  style="background-color:#e28c05;color:#f9efc1" class="botton" id = "compile">Compile and Run</button> 
+       {{-- <a class="btn btn-primary d-flex " type="button" style="margin:0px 1050px;width:70px;background-color:#e28c05;color:#f9efc1;text-align:center">Solve</a> --}}
        {{-- <button type="button">Click Me</button> --}}
       </div>
 
