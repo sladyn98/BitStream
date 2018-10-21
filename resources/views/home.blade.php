@@ -14,11 +14,35 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aubrey">
+
+<meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+          <!-- CSRF Token -->
+          <meta name="csrf-token" content="{{ csrf_token() }}">
+      
+          <title>{{ config('app.name', 'Laravel') }}</title>
+      
+          <!-- Scripts -->
+          <script src="{{ asset('js/app.js') }}" defer></script>
+      
+          <!-- Fonts -->
+          <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+      
+          <!-- Styles -->
+          <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+      
+        
+
+
+
+
 </head>
 
 <body style="background-color:rgb(5,32,45);">
    
-    <nav class="navbar navbar-expand-md navbar-light navbar-laravel"  style="background-color:rgb(255,255,255);">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel"  style="background-color:rgb(5,32,45);">
         <div class="container" id="cont">
             <a class="navbar-brand" href="{{ url('/') }}">
             BitStream
@@ -70,6 +94,9 @@
     </nav>
 
     <h1 style="color:#108c76;font-size:90px;margin:180px 420px; text-align:center">Bitstream</h1>
+
+
+    
     <div class="footer-basic" style="background-color:rgb(5,32,45);">
         <footer>
             <ul class="list-inline" style="color:#f9efc1; text-align:center">

@@ -35,7 +35,7 @@ Auth::routes();
 
 Route::get('/dashboard', array('as' => 'dashboard', function()
 {
-    return view('dashboard');
+    return view('dashboard1');
 }));
 
 
