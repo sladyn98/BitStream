@@ -87,11 +87,10 @@
 
 
     <div class="jumbotron" style="padding:10px;background-color:rgb(5,32,45);">
-        <h1 style="color:#f9efc1;"><strong>Welcome to Java!</strong><br></h1>
-        <p style="font-size:20px;color:#f9efc1;"><br>Welcome to the world of Java! In this challenge, we practice printing to stdout.<br>Complete the&nbsp;<em>main</em>&nbsp;method by copying the two lines of code below and pasting them inside the body of your&nbsp;<em>main</em>&nbsp;method.<br><br>System.out.println("Hello,
-            World.");<br>System.out.println("Hello, Java.")<br><br><br></p>
-        <p style="text-align: center">
-            <a class="btn btn-primary" role="button" href="{{route('code_editor',['id'=>"J01",'lang'=>"JAVA"])}}" style="background-color:#f96302;color:#f9efc1;">Solve</a></p>
+        <h1 style="color:#f9efc1;"><strong>Mix it Up!</strong><br></h1>
+        <p style="font-size:20px;color:#f9efc1;"><br>Jack is the part of the scoring team in a game of basketball. he has been assigned the task to develop a program which shows the name and the score of each team with a hyphen in the middle. the scores are changed manually. Could you help him
+            print a number and string in the same line(Score is taken as user input)<br><br><br></p>
+        <p style="text-align: center"><a class="btn btn-primary" role="button" href="{{route('code_editor',['id'=>"C03",'lang'=>"C"])}}" style="background-color:#f96302;color:#f9efc1;">Solve</a></p>
     </div>
     <div class="footer-basic" style="background-color:rgb(5,32,45);">
         <footer>

@@ -141,11 +141,14 @@ echo $response['compile_status'];
     public function code(){
 
         $code = $_GET['value'];
+        $language = $_GET['language'];
+        $language1 = (string) $language;
+        //$language="PYTHON";
         //Import the SDK 
       //  require_once('public\index.php');
 //Setting up the Hackerearth API
 $hackerearth = Array(
-		'client_secret' => '1c24ead3d9f8981b869a34c19d875ebf6ed3f207', //(REQUIRED) Obtain this by registering your app at http://www.hackerearth.com/api/register/
+		'client_secret' => '180a98c09c1e1806ccfed14e0fbc4abe62916e32', //(REQUIRED) Obtain this by registering your app at http://www.hackerearth.com/api/register/
         'time_limit' => '5',   //(OPTIONAL) Time Limit (MAX = 5 seconds )
         'memory_limit' => '262144'  //(OPTIONAL) Memory Limit (MAX = 262144 [256 MB])
 	);
@@ -156,7 +159,7 @@ $config['time']='5';	 	//(OPTIONAL) Your time limit in integer and in unit secon
 $config['memory']='262143'; //(OPTIONAL) Your memory limit in integer and in unit kb
 $config['source']=$code;;    	//(REQUIRED) Your properly formatted source code for which you want to use hackerEarth api
 $config['input']='';   	//(OPTIONAL) Properly Formatted Input against which you have to test your source code, leave this empty if you are using file
-$config['language']='PYTHON';   //(REQUIRED) Choose any one of the below
+$config['language']=$language1;   //(REQUIRED) Choose any one of the below
 						 	// C, CPP, CPP11, CLOJURE, CSHARP, JAVA, JAVASCRIPT, HASKELL, PERL, PHP, PYTHON, RUBY
 //Sending request to the API to compile and run and record JSON responses
 $response = $this->run($hackerearth,$config); // Use this $response the way you want , it consists data in PHP Array

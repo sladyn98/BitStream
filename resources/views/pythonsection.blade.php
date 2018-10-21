@@ -74,15 +74,18 @@
     </div>
     <div></div>
     <div class="jumbotron" style="margin:0px;padding:0px;background-color:rgba(21,86,150,0.46);">
-        <h2 style="color:#f9efc1;row justify-content-center features">Welcome to Python!<button class="btn btn-primary d-flex " type="button" style="margin:0px 1050px;background-color:#e28c05;color:#f9efc1;">Solve</button></h2>
+        <h2 style="color:#f9efc1;row justify-content-center features">Welcome to Python!
+            <a  href="{{route('pythonq')}}" class="btn btn-primary d-flex " type="button" style="margin:0px 1050px;width:70px;background-color:#e28c05;color:#f9efc1;">Solve</a></h2>
         <p style="font-size:20px;color:#f9efc1;">Very easy</p>
     </div>
     <div class="jumbotron" style="margin:0px;padding:0px;background-color:rgba(21,86,150,0.46);">
-        <h2 style="color:#f9efc1;">Print it reverse!<button class="btn btn-primary d-flex" type="button" style="margin:0px 1050px;background-color:#e28c05;color:#f9efc1;">Solve</button></h2>
+        <h2 style="color:#f9efc1;">Print it reverse!
+            <a  href="{{route('pythonq2')}}" class="btn btn-primary d-flex " type="button" style="margin:0px 1050px;width:70px;background-color:#e28c05;color:#f9efc1;">Solve</a></h2>
         <p style="font-size:20px;color:#f9efc1;">Easy</p>
     </div>
     <div class="jumbotron" style="margin:0px;padding:0px;background-color:rgba(21,86,150,0.46);">
-        <h2 style="color:#f9efc1;">Mix it up!<button class="btn btn-primary d-flex" type="button" style="margin:0px 1050px;background-color:#e28c05;color:#f9efc1;">Solve</button></h2>
+        <h2 style="color:#f9efc1;">Mix it up!
+            <a  href="{{route('pythonq3')}}" class="btn btn-primary d-flex " type="button" style="margin:0px 1050px;width:70px;background-color:#e28c05;color:#f9efc1;">Solve</a></h2>
         <p style="font-size:20px;color:#f9efc1;">Medium</p>
     </div>
     <div class="footer-basic" style="background-color:rgb(5,32,45);">

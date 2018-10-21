@@ -116,7 +116,15 @@
                         <span class="navbar-text actions"> </span></div>
         </div>
         </nav>
-        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 <pre id="editor">
 </pre>
@@ -125,7 +133,16 @@
 {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
 {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
 
-<script>
+<script >
+
+   var link = window.location.href;
+   var url = new URL(link);
+   var x = url.toString();
+   var code_lang = url.toString().split('/')[5];
+   var problem_code = url.toString().split('/')[4];
+   console.log(url.toString().split('/')[5]);
+   console.log(url.toString().split('/')[4]);
+
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/monokai");
     editor.getSession().setMode("ace/mode/c_cpp");
@@ -134,51 +151,112 @@
 
     $(document).ready(function(){
         $('#compile').click(function() {
+
         var x = editor.getValue();
-        console.log("HELLO WORLD");
         $.ajax({
         url: '/runner',
         type: 'GET',
         async: false,
-        data :{'value' : x},
+        data :{'value' : x,
+               'language': code_lang
+        },
         success: function(result){
          //console.log(result);
- 
+          var link = window.location.href;
+           var url = new URL(link);
+           console.log("we have success");
+           console.log(result);
+         
         var answer;
-         $.getJSON("data.json", function(json) {
 
-           for(var i =0;i<json.length;i++){
-               if(json[i].id=="C01"){
-                answer = json[i].test;
+
+        $.ajax({
+    type: "Get",
+    url: "/data1.json",
+    dataType: "json",
+    success: function(data) {
+      console.log(data);
+
+
+      
+
+
+ for(var i =0;i<data.length;i++){
+               if(data[i].id==problem_code){
+                answer = data[i].test;
                 
                 answer1 = result.trim();
+            
+                
+
                 console.log("result"+result.trim().length);
                  console.log("answer"+answer.length);
                  var x = answer1.localeCompare(answer);
                  if(x==0)
-                 window.location.href = "output";
+                  window.location.href = "http://localhost:8000/output";
 
-                 else
-                 window.location.href = "wrong";
+                  else
+                  window.location.href = "http://localhost:8000/wrong";
                  
 
 
                }
            }
-           //console.log(json); // this will show the info it in firebug console
-      });
+    },
+    error: function(){
+        alert("json not found");
+    }
+});
+
+
+    //      $.getJSON('data1.json', function(json) {
+
+    //        console.log("Entering json");
+    //        for(var i =0;i<json.length;i++){
+    //            if(json[i].id=="C01"){
+    //             answer = json[i].test;
+                
+    //             answer1 = result.trim();
+            
+                
+
+    //             console.log("result"+result.trim().length);
+    //              console.log("answer"+answer.length);
+    //              var x = answer1.localeCompare(answer);
+    //              if(x==0)
+    //               window.location.href = "output";
+
+    //               else
+    //               window.location.href = "wrong";
+                 
+
+
+    //            }
+    //        }
+    //        //console.log(json); // this will show the info it in firebug console
+    //   });
 
 
         
-        //  var aaa = JSON.stringify(answer);
-        //  console.log("answer"+aaa);
-        //  if(result===answer){
-        //   console.log("WOW");
-        //  // window.location.href = "output";
+         var aaa = JSON.stringify(answer);
+         console.log("answer"+aaa);
+         if(result===answer){
+          console.log("WOW");
+         // window.location.href = "output";
           
-        // }
+        }
     
-        }});
+        },
+        error:function(){
+            window.location.href = "http://localhost:8000/wrong";
+        }
+        
+        
+        });
+
+
+
+
     });
     });
     
@@ -190,7 +268,7 @@
 
       <div class="footer">
        <!-- <a   type="button" class="btn btn-default">Run</a>-->
-       <button id = "compile">Compile</button>
+       <button id = "compile">Compile and Run</button>
        {{-- <button type="button">Click Me</button> --}}
       </div>
 

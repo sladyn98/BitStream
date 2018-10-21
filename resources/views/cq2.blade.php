@@ -2,42 +2,40 @@
 <html>
 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home_final</title>
-<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
-<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
-<link href="{{asset('css/javaq.css')}}" rel="stylesheet"/>
-<script src="{{asset('js/jquery.min.js')}}" async defer></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aubrey">
-
-
-
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_final</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet"/>
+    <link href="{{asset('css/javaq.css')}}" rel="stylesheet"/>
+    <script src="{{asset('js/jquery.min.js')}}" async defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aubrey">
+    
+    
+    
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+        <title>{{ config('app.name', 'Laravel') }}</title>
+    
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
+    
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
 </head>
 
 <body style="background-color:rgb(5,32,45);">
-    
     <div>
         <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="background-color:rgb(17,1,1);">
             <div class="container"><a class="navbar-brand" href="#" style="color:#108c76;font-family:'Alfa Slab One', cursive;">BitStream</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -84,14 +82,14 @@
     </div>
     </nav>
     </div>
-
-
     <div class="jumbotron" style="padding:10px;background-color:rgb(5,32,45);">
-        <h1 style="color:#f9efc1;"><strong>Welcome to Java!</strong><br></h1>
-        <p style="font-size:20px;color:#f9efc1;"><br>Welcome to the world of Java! In this challenge, we practice printing to stdout.<br>Complete the&nbsp;<em>main</em>&nbsp;method by copying the two lines of code below and pasting them inside the body of your&nbsp;<em>main</em>&nbsp;method.<br><br>System.out.println("Hello,
-            World.");<br>System.out.println("Hello, Java.")<br><br><br></p>
-        <p style="text-align: center">
-            <a class="btn btn-primary" role="button" href="{{route('code_editor',['id'=>"J01",'lang'=>"JAVA"])}}" style="background-color:#f96302;color:#f9efc1;">Solve</a></p>
+        <h1 style="color:#f9efc1;"><strong>Print it reverse!</strong><br></h1>
+        <p style="font-size:20px;color:#f9efc1;"><br>Robin has been given a task to print numbers from 50 to 1. But due to lack of time he can't type them and hence he decides to device a code for it . Help him write a code for the same where each number is printed on a new line. &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br><br></p>
+            <p style="text-align: center"><a class="btn btn-primary" role="button" href="{{route('code_editor',['id'=>"C02",'lang'=>"C"])}}" style="background-color:#f96302;color:#f9efc1;">Solve</a></p>
     </div>
     <div class="footer-basic" style="background-color:rgb(5,32,45);">
         <footer>
@@ -102,7 +100,7 @@
                 <li class="list-inline-item"><a href="#">Terms &amp; Policies</a></li>
                 <li class="list-inline-item"></li>
             </ul>
-            <p class="copyright" style="color:#f9efc1;">Bitstream© 2018</p>
+            <p class="copyright" style="color:#f9efc1;">Bitstream © 2018</p>
         </footer>
     </div>
     <script src="assets/js/jquery.min.js"></script>
