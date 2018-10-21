@@ -62,7 +62,7 @@
                             </li>
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown"  style="color:#f9efc1" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -85,7 +85,7 @@
     </div>
     </nav>
     </div>
-    <div class="features-boxed"><div class="container">
+    <div class="features-boxed"><div class="container" style="text-align:center">
     <div class="intro">
         <h2 class="text-center">Dashboard</h2>
     </div>
@@ -111,7 +111,19 @@
                 <a href="{{ route('pythonsection') }}" id = "cplussection" class="btn btn-primary">Practice</a>
         </div>
     </div>
-</div></div>
+</div
+class="footer-basic" style="background-color:rgb(5,32,45);">
+        <footer>
+            <ul class="list-inline" style="color:#f9efc1;">
+                <li class="list-inline-item"></li>
+                <li class="list-inline-item"></li>
+                <li class="list-inline-item"><a href="#">About Us</a></li>
+                <li class="list-inline-item"><a href="#">Terms &amp; Policies</a></li>
+                <li class="list-inline-item"></li>
+            </ul>
+            <p class="copyright" style="color:#f9efc1;">Bitstream© 2018</p>
+        </footer>
+</div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>

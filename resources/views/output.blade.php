@@ -28,4 +28,4 @@
 
 </script>
 
-  <button id="run" class="btn orange" type="button"><span>Return Home</span></button>
+  <a href="{{route('dashboard')}}"id="run" class="btn orange" type="button"><span>Return Home</span></a>
